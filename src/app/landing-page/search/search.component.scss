@@ -1,0 +1,43 @@
+section{
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #FFFFFF;
+  div{
+    &:first-child{
+      width: 400px;
+      padding-right: 5px;
+    }
+    &:last-child{
+      width: 100%;
+      padding: 15px 10% 15px 0;
+      div{
+        &:first-child{
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          padding-bottom: 15px;
+          h3{
+            font-weight: 300;
+            font-size: 26px;
+            color: #000;
+            margin: 0;
+            padding: 0 5px;
+            text-transform: uppercase;
+          }
+          mat-icon{
+            color: #000;
+          }
+        }
+        &:last-child{
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          button{
+            background-color: #83CDAC;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<nav>
+  <div>
+    <a href="/">
+      <mat-icon>location_on</mat-icon>
+      Around the World
+    </a>
+  </div>
+  <div>
+    <a *ngFor="let item of links; let i = index" [routerLink]="item.router">
+      {{ item.name }}
+    </a>
+  </div>
+</nav>

@@ -1,0 +1,8 @@
+<section>
+  <h3>Gallery</h3>
+  <div class="gallery">
+    <div *ngFor="let item of gallery; let i = index">
+      <img [src]="item.src" alt="gallery" (click)="openImgDialog(i)">
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+<section>
+  <div>
+    <img src="/assets/search/map.png" alt="Find your way" height="100%">
+  </div>
+  <div>
+    <div><mat-icon>location_on</mat-icon><h3>Find your place</h3></div>
+    <div>
+      <mat-form-field>
+        <mat-select placeholder="Select country" [(ngModel)]="ticketCost" name="country">
+          <mat-option *ngFor="let item of country" [value]="item.cost">
+            {{item.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <p>Ticket cost: {{ticketCost | currency}}</p>
+      <button mat-raised-button>Buy ticket</button>
+    </div>
+  </div>
+</section>

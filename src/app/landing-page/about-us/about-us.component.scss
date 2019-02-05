@@ -1,0 +1,52 @@
+section{
+  background-color: #F2F2F2;
+  padding: 25px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  div{
+    &:first-child{
+      width: 66%;
+      h3{
+        font-weight: 400;
+        margin: 0;
+        text-transform: uppercase;
+        color: #828282;
+        font-size: 12px;
+        text-align: center;
+      }
+      h4{
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 32px;
+        padding: 10px 0;
+      }
+      p{
+        color: #828282;
+        line-height: 1.5;
+        font-size: 18;
+        margin: 0;
+        text-align: center;
+      }
+    }
+    &:last-child{
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin: 40px 0;
+      mat-card{
+        width: 25%;
+        margin: 0 1%;
+        mat-icon{
+          color: #828282;
+        }
+        p{
+          color: #828282;
+        }
+      }
+    }
+  }
+}

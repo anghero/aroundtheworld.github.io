@@ -1,0 +1,27 @@
+<section>
+  <h3>Contact Form</h3>
+  <form [formGroup]="form" (ngSubmit)="onSubmitForm()">
+    <div>
+      <mat-form-field >
+        <input color="primary" formControlName="name" matInput placeholder="name">
+        <mat-error *ngIf="form.get('name').touched && form.get('name').invalid">This field is required</mat-error>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field >
+        <input formControlName="email" matInput placeholder="email">
+        <mat-error *ngIf="form.get('email').touched && form.get('email').invalid">Invalid email</mat-error>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field >
+        <textarea formControlName="message" matInput placeholder="Your message"></textarea>
+        <mat-error *ngIf="form.get('message').touched && form.get('message').invalid">This field is required</mat-error>
+      </mat-form-field>
+    </div>
+    <div>
+      <button mat-flat-button type="submit">Send</button>
+    </div>
+    <p *ngIf="submited" [@fadeIn]>Form was sent!</p>
+  </form>
+</section>

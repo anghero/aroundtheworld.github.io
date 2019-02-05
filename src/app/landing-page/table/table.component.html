@@ -1,0 +1,37 @@
+<section>
+  <h3>Next flight</h3>
+  <div class="table-columns table-header">
+    <div>
+      Destination
+    </div>
+    <div>
+      Date
+    </div>
+    <div>
+      Time
+    </div>
+    <div>
+      Cost
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <div class="table-columns table-data" *ngFor="let item of schedule">
+    <div>
+      {{ item.destination }}
+    </div>
+    <div>
+      {{ item.date }}
+    </div>
+    <div>
+      {{ item.time }}
+    </div>
+    <div>
+      {{ item.cost | currency}}
+    </div>
+    <div>
+      <button mat-raised-button>Buy ticket</button>
+    </div>
+  </div>
+</section>

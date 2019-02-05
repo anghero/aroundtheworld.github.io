@@ -1,0 +1,22 @@
+<footer>
+  <div>
+    <a href="/">
+      <mat-icon>location_on</mat-icon>
+      Around the World
+    </a>
+  </div>
+  <div>
+    <h6>site map</h6>
+    <a href="#" *ngFor="let item of map; let i = index">
+      {{ item.name }}
+    </a>
+  </div>
+  <div>
+    <h6>address</h6>
+    <p *ngFor="let item of adress">{{ item.name }}</p>
+  </div>
+  <div>
+    <h6>socials</h6>
+    <a href="#" *ngFor="let item of socials">{{ item.icon }}</a>
+  </div>
+</footer>
